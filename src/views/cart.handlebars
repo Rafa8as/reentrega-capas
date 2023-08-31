@@ -1,0 +1,20 @@
+<div>
+    <h1>Carrito</h1>
+        <div>
+            {{#each payload}}
+            <div>
+               
+                <p>{{this._id.title}}</p>
+                <p>${{this._id.price}}</p>
+                <p>x{{this.quantity}}</p>
+                <p><strong>${{multiply this._id.price this.quantity}}</strong></p>
+            </div>
+            {{/each}}
+        </div>
+
+        <div>
+            <p>TOTAL: ${{total payload}}</p>
+			<button>comprar</button>
+        </div>
+    
+</div>

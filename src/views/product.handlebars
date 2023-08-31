@@ -1,0 +1,16 @@
+<div>
+    <h1>Producto</h1>
+    <div>
+        <p>Product: {{product.title}} </p>
+        <p>Descripcion: {{product.description}} </p>
+        <p>Precio: ${{product.price}} </p>
+        <p>Stock: {{product.stock}} </p>
+        <p>Categoria: {{product.category}} </p>
+        <a href="/api/cart/{{cart}}/product/{{product._id}}" target="_blank">Agregar al Carrito</a>
+        <a class='header-link' href='/cart/{{cart}}'>comprar</a>
+    </div>
+
+
+    
+</div>
+<script src='/js/products.js'></script>
